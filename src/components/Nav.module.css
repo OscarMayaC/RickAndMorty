@@ -1,0 +1,17 @@
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+}
+
+.navheader {
+    display: inline;
+}
+
+.navtitle {
+    display: flex;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
