@@ -10,8 +10,24 @@
 }
 
 .navtitle {
-    display: flex;
+    display: inline;
     font-size: 22px;
-    color: #fff;
+    color: rgb(235, 25, 25);
     padding: 10px 10px 10px 10px;
+    position: relative;
+    top: -35px;
+    right: 550px;
+}
+
+.navButtons {
+    width: 80px;
+    height: 34px;
+    /* border: 1px solid #00b4cc; */
+    background: #00b4cc;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+
 }
