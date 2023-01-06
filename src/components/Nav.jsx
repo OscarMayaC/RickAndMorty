@@ -18,6 +18,11 @@ export default function Nav(props) {
                         About
                     </Link>
                 </button>
+                <button className={styles.navButtons}>
+                    <Link to="/">
+                        Log Out
+                    </Link>
+                </button>
             </ul>
             <div className={styles.navheader}>
                 <div className={styles.navtitle}>Rick & Morty App </div>

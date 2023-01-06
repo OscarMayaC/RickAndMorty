@@ -1,6 +1,7 @@
 .App {
-   text-align: center;
-   background-image: url(./components/universe.png);
-   /* background-color: aqua; */
-}
+   background-color: #000000;
+   opacity: 0.8;
+   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 10px), repeating-linear-gradient(#10157055, #101570);
+  
 
+}

@@ -8,9 +8,34 @@ import About from './components/About.jsx';
 import Detail from "./components/Detail.jsx";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
-
+import Form from "./components/Form.jsx";
+// import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+
+  const [access, setAccess] = React.useState(false);
+  const username = "access@rickandmorty.com";
+  const password = "Welcome@";
+  const navigate = useNavigate();
+
+  function login(userData) {
+    if (userData.password === password && userData.username === username) {
+      setAccess(true);
+      navigate("/home");
+    } else {
+      window.alert("Incorrect credentials");
+    }
+  }
+
+  useEffect(() => {
+    !access && navigate("/");
+  }, [access]);
+
+  const location = useLocation();
+
 
   const [characters, setCharacters] = React.useState(character)
 
@@ -36,16 +61,18 @@ function App() {
     })
   }
 
+
+
   return (
     <div className='App' style={{ padding: '25px' }}>
       <div>
-        <Nav onSearch={onSearch} />
+        {location.pathname === "/" ? null : <Nav onSearch={onSearch} />}
       </div>
       <Routes>
         <Route path='/about' element={<About />} />
-        {/* <Route path='/nav' element={<Nav />} /> */}
         <Route path='/detail/:detailId' element={<Detail />} />
         <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} />
+        <Route path='/' element={<Form login={login} />}></Route>
       </Routes>
 
     </div>
