@@ -13,12 +13,13 @@ import Form from "./components/Form.jsx";
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Favorites from './components/Favorites'
 
 function App() {
 
   const [access, setAccess] = React.useState(false);
   const username = "access@rickandmorty.com";
-  const password = "Welcome@";
+  const password = "Welc0me@";
   const navigate = useNavigate();
 
   function login(userData) {
@@ -46,11 +47,11 @@ function App() {
         if (data.name) {
           let exist = characters.find(e => e.id === data.id)
           if (exist) {
-            window.alert("Ya agregaste este personaje")
+            window.alert("You already added this character")
           } else { setCharacters(prevState => [...prevState, data]) }
 
         } else {
-          window.alert("No se encontro el personaje")
+          window.alert("Character not found")
         }
       })
   }
@@ -73,6 +74,7 @@ function App() {
         <Route path='/detail/:detailId' element={<Detail />} />
         <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} />
         <Route path='/' element={<Form login={login} />}></Route>
+        <Route path='/favorites' element={<Favorites characters={characters} onClose={onClose} />}></Route>
       </Routes>
 
     </div>

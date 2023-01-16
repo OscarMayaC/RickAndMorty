@@ -10,17 +10,23 @@ export default function Nav(props) {
             <ul className={styles.navBotones}>
                 <button className={styles.navButtons}>
                     <Link to="/home">
-                        Home
+                        HOME
+                    </Link>
+                </button>
+                <button className={styles.navButtons}>
+                    <Link to="/favorites">
+                        FAVORITES
                     </Link>
                 </button>
                 <button className={styles.navButtons}>
                     <Link to="/about">
-                        About
+                        ABOUT
                     </Link>
                 </button>
+
                 <button className={styles.navButtons}>
                     <Link to="/">
-                        Log Out
+                        LOG OUT
                     </Link>
                 </button>
             </ul>

@@ -33,7 +33,7 @@ export default function Detail() {
                 <h2>Gender: {character.gender}</h2>
                 <h2>Origin: {character.origin?.name}</h2>
             </div>
-            <img src={character.image} alt={character.name} />
+            <img className={styles.image} src={character.image} alt={character.name} />
         </div>
     )
 }

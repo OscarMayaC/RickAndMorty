@@ -1,3 +1,17 @@
 .detailsCharacter {
     color: white;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    left: 200px;
+    
+}
+
+.image {
+    position: relative;
+    align-items: center;
+    width: 400px;
+    top: -250px;
+    left: 200px;
+    border-radius: 10px;
 }

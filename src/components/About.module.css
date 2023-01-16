@@ -1,0 +1,12 @@
+.div {
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.image {
+    top: 10px;
+    position: relative;
+    block-size: 350px;
+    border-radius: 15px;
+}

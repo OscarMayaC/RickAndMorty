@@ -1,9 +1,10 @@
 .div {
     color: antiquewhite;
+    padding: 24%;
 }
 
 .form {
-    height: 520px;
+    height: 450px;
     width: 400px;
     background-color: rgba(255, 255, 255, 0.13);
     position: absolute;
@@ -30,6 +31,10 @@
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .input {
@@ -42,6 +47,7 @@
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    color: white;
 }
 
 .button {

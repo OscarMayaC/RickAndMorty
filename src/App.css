@@ -1,7 +1,14 @@
-.App {
+/* .App {
    background-color: #000000;
-   opacity: 0.8;
-   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 10px), repeating-linear-gradient(#10157055, #101570);
+  
+   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 10px), repeating-linear-gradient(#10157055, #444eff);
   
 
+} */
+
+.App {
+   background-image: url(https://images3.alphacoders.com/812/812062.png);
+   background-size: contain;
+
+  
 }

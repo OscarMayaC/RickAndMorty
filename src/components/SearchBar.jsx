@@ -14,7 +14,7 @@ export default function SearchBar(props) {
       <div className={styles.wrap}>
    <div className={styles.search}>
       <input type="search" className={styles.searchTerm} id="" onChange={handleChange}/>
-      <button className={styles.searchButton} onClick={() => props.onSearch(id)}>Add
+      <button className={styles.searchButton} onClick={() => props.onSearch(id)}>ADD
         <i className={styles.fafa}></i>
      </button>
    </div>
