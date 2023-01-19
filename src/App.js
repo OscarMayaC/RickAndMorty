@@ -41,7 +41,7 @@ function App() {
   const [characters, setCharacters] = React.useState(character)
 
   const onSearch = (characterId) => {
-    fetch(`https://rickandmortyapi.com/api/character/${characterId}`)
+    fetch(`http://localhost:3001/rickandmorty/character/${characterId}`)
       .then(r => r.json())
       .then(data => {
         if (data.name) {
