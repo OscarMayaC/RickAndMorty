@@ -14,6 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Favorites from './components/Favorites'
+import axios from "axios"
 
 function App() {
 
@@ -40,20 +41,23 @@ function App() {
 
   const [characters, setCharacters] = React.useState(character)
 
-  const onSearch = (characterId) => {
-    fetch(`http://localhost:3001/rickandmorty/character/${characterId}`)
-      .then(r => r.json())
-      .then(data => {
-        if (data.name) {
-          let exist = characters.find(e => e.id === data.id)
-          if (exist) {
-            window.alert("You already added this character")
-          } else { setCharacters(prevState => [...prevState, data]) }
+  const onSearch = async (characterId) => {
+    try {
+      const result = await axios(`http://localhost:3001/rickandmorty/character/${characterId}`)
+      const charac = result.data
+      if (charac.name) {
+        let exist = characters.find(e => e.id === charac.id)
+        if (exist) {
+          window.alert("You already added this character")
+        } else { setCharacters(prevState => [...prevState, charac]) }
 
-        } else {
-          window.alert("Character not found")
-        }
-      })
+      } else {
+        window.alert("Character not found")
+      }
+    } catch (error) {
+      console.log(error)
+    }
+
   }
 
   const onClose = (id) => {
