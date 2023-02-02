@@ -18,7 +18,7 @@
     padding: 50px 35px;
 
     font-family: 'Poppins', sans-serif;
-    color: #c03030;
+    color: #b60505;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
@@ -47,7 +47,12 @@
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
-    color: white;
+    color: rgb(255, 255, 255);
+
+}
+
+.input::placeholder {
+    color: black;
 }
 
 .button {

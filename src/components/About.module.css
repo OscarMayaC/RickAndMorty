@@ -10,3 +10,19 @@
     block-size: 350px;
     border-radius: 15px;
 }
+
+.linkedin {
+    position: relative;
+    block-size: 100px;
+    bottom: 400px;
+    right: 400px;
+
+}
+
+.github {
+    position: relative;
+    block-size: 100px;
+    bottom: 400px;
+    left: 400px;
+
+}

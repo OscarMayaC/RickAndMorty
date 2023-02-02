@@ -29,6 +29,8 @@ function App() {
       navigate("/home");
     } else {
       window.alert("Incorrect credentials");
+      window.alert("Username: access@rickandmorty.com");
+      window.alert("Password: Welc0me@")
     }
   }
 
@@ -55,7 +57,7 @@ function App() {
         window.alert("Character not found")
       }
     } catch (error) {
-      console.log(error)
+      window.alert("Character not found")
     }
 
   }
