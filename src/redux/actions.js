@@ -13,7 +13,8 @@ export function addFavorites(ch) {
 
     return async function (dispatch) {
         try {
-            const character = await axios.post(`http://localhost:3001/rickandmorty/fav`, ch)
+            // const character = await axios.post(`http://localhost:3001/rickandmorty/fav`, ch)
+            const character = await axios.post(`https://rickandmortybackend-production.up.railway.app/rickandmorty/fav`, ch)
 
             dispatch({
                 type: ADD_FAVORITE,
@@ -32,8 +33,8 @@ export function addFavorites(ch) {
 export function deleteFavorites(id) {
     return async function (dispatch) {
         try {
-            const character = await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
-
+            // const character = await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
+            const character = await axios.delete(`https://rickandmortybackend-production.up.railway.app/rickandmorty/fav/${id}`)
             dispatch({
                 type: DELETE_FAVORITE,
                 payload: id

@@ -45,7 +45,8 @@ function App() {
 
   const onSearch = async (characterId) => {
     try {
-      const result = await axios(`http://localhost:3001/rickandmorty/character/${characterId}`)
+      // const result = await axios(`http://localhost:3001/rickandmorty/character/${characterId}`)
+      const result = await axios(`https://rickandmortybackend-production.up.railway.app/rickandmorty/character/${characterId}`)
       const charac = result.data
       if (charac.name) {
         let exist = characters.find(e => e.id === charac.id)
