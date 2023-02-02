@@ -36,6 +36,7 @@ function App() {
 
   useEffect(() => {
     !access && navigate("/");
+    // eslint-disable-next-line
   }, [access]);
 
   const location = useLocation();

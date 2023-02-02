@@ -30,6 +30,7 @@ export default function Card(props) {
             setIsFav(true);
          }
       });
+      // eslint-disable-next-line
    }, [myFavorites]);
 
 
