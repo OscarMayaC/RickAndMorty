@@ -6,11 +6,12 @@
 }
 
 .search {
-  top: 10px;
+  top: 40px;
   width: 150%;
-  position: absolute;
+  position: static;
   left: 115%;
   display: flex;
+ 
   
 }
 
@@ -23,6 +24,7 @@
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #9dbfaf;
+ 
 }
 
 .searchTerm:focus {

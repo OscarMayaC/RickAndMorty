@@ -2,10 +2,11 @@
     color: white;
     text-align: center;
     backdrop-filter: blur(10px);
+    margin-top: 50px;
 }
 
 .image {
-    top: 120px;
+    top: 5px;
     position: relative;
     block-size: 350px;
     border-radius: 15px;
@@ -16,7 +17,8 @@
     block-size: 100px;
     align-items: auto;
     align-self: auto;
-    top: 60px;
+    top: 0px;
+    padding-bottom: 30px;
 
 }
 
@@ -25,12 +27,13 @@
     block-size: 100px;
     align-items: auto;
     align-self: auto;
-    top: 60px;
+    top: -30px;
     left: 50px;
     border-radius: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .Text {
     position: relative;
-    top: 60px;
+    top: 0px;
 }
