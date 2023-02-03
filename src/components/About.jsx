@@ -9,7 +9,7 @@ export default function About() {
     <div className={styles.div}>
       <img src={DeveloperPhoto} alt="DeveloperPhoto" className={styles.image} />
       <h1>The Developer</h1>
-      <h2>
+      <h2 className={styles.Text}>
         Thanks for being here! My name is Oscar Maya,
         I am a Mexican Full Stack Web Developer, this App
         has been created with JavaScript, React, Redux, pure CSS, Node.js and Express.
@@ -18,7 +18,7 @@ export default function About() {
         <img className={styles.linkedin} src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt='linkedin logo'></img>
       </a>
       <a href="https://github.com/OscarMayaC">
-        <img className={styles.github} src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo" />
+        <img className={styles.github} src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" />
       </a>
     </div>
   )

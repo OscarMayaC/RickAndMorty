@@ -5,7 +5,7 @@
 }
 
 .image {
-    top: 10px;
+    top: 120px;
     position: relative;
     block-size: 350px;
     border-radius: 15px;
@@ -14,15 +14,23 @@
 .linkedin {
     position: relative;
     block-size: 100px;
-    bottom: 400px;
-    right: 400px;
+    align-items: auto;
+    align-self: auto;
+    top: 60px;
 
 }
 
 .github {
     position: relative;
     block-size: 100px;
-    bottom: 400px;
-    left: 400px;
+    align-items: auto;
+    align-self: auto;
+    top: 60px;
+    left: 50px;
+    border-radius: 30px;
+}
 
+.Text {
+    position: relative;
+    top: 60px;
 }
