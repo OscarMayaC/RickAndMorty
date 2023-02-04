@@ -24,7 +24,7 @@ export default function Nav(props) {
                     </Link>
                 </button>
 
-                <button className={styles.navButtons}>
+                <button className={styles.navButtonsLogOut}>
                     <Link to="/">
                         LOG OUT
                     </Link>

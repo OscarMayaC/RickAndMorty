@@ -35,6 +35,7 @@ export default function Detail() {
                 <h2>Origin: {character.origin?.name}</h2>
             </div>
             <img className={styles.image} src={character.image} alt={character.name} />
+            <img className={styles.imageLogo} src={"https://occ-0-999-38.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdlsO0LP022AtLRcPlik-5uWGqVS90oIr1Wy70ULe7-qyaW-Y3a9zUgndw6Q6KuHX2gH_Vd3Nxnl6EOU38_ep9ApNbNfn2Krr6hLj6fhs_eZ.png?r=976"} alt={"rickandmortylogo"} />
         </div>
     )
 }

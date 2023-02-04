@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { filterCards, orderCards, reset } from '../redux/actions';
 import Card from './Card';
+import styles from "./Fovorites.module.css";
 
 export default function Favorites(props) {
     const dispatch = useDispatch();
@@ -34,7 +35,7 @@ export default function Favorites(props) {
     return (
         <div>
             <div>
-                <select name='filter' defaultValue={"Default"} onChange={handleClick}>
+                <select className={styles.options} name='filter' defaultValue={"Default"} onChange={handleClick}>
                     <option value="Default" disabled>Select Gender</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -42,14 +43,14 @@ export default function Favorites(props) {
                     <option value="unknown">unknown</option>
                 </select>
 
-                <select name="order" defaultValue={"Default"} onChange={handleClick}>
+                <select className={styles.options} name="order" defaultValue={"Default"} onChange={handleClick}>
                     <option value="Default" disabled>Select Order</option>
                     <option value="Ascendente">Ascendente</option>
                     <option value="Descendente">Descendente</option>
                 </select>
 
 
-                <button onClick={() => dispatch(reset())}>
+                <button className={styles.options} onClick={() => dispatch(reset())}>
                     Remove Filters
                 </button>
 
