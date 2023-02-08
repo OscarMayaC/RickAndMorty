@@ -3,14 +3,34 @@
     color: white;
     text-align: center;
     position: relative;
-   
-    left: 0px;
+
+    left: 200px;
     align-items: center;
     top: 20px;
     padding-right: 70%;
     text-anchor: 10px;
 
+
 }
+
+@media screen and (max-width: 1000px) {
+    .detailsCharacter {
+
+        color: white;
+        text-align: center;
+        position: relative;
+
+        left: 30%;
+        align-items: center;
+        top: 20px;
+        padding-right: 70%;
+        text-anchor: 10px;
+       
+
+    }
+
+}
+
 
 .image {
     /* position: relative;
@@ -30,12 +50,52 @@
     border-radius: 10px;
     block-size: 370px;
     top: 5px;
+    left: 200px;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .image {
+        /* position: relative;
+        align-items: center;
+         width: auto;
+        top: -250px;
+         left: 200px;  
+        border-radius: 10px;
+         */
+    
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 0px;
+        position: relative;
+        align-items: center;
+        bottom: 0px;
+        border-radius: 10px;
+        block-size: 370px;
+        top: 5px;
+        left: 0px;
+        
+    }
+
+}
+
+
+
+
 
 .imageLogo {
     block-size: 200px;
     position: relative;
     left: 400px;
     bottom: 250px;
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .imageLogo {
+        display: none;
+    }
 
 }
