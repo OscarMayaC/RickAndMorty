@@ -42,12 +42,12 @@ export default function Form(props) {
                     <label className={styles.label} htmlFor="">
                         Username
                     </label>
-                    <input className={styles.input} onChange={(event) => handleInputChange(event)} name="username" placeholder='Enter your username' type="text" />
+                    <input className={styles.input} onChange={(event) => handleInputChange(event)} name="username" placeholder='access@rickandmorty.com' type="text" />
                     <p>{errors.username}</p>
                     <label className={styles.label} htmlFor="">
                         Password
                     </label>
-                    <input className={styles.input} onChange={(event) => handleInputChange(event)} name="password" placeholder='Enter your password' type="password" />
+                    <input className={styles.input} onChange={(event) => handleInputChange(event)} name="password" placeholder='Welc0me@' type="password" />
                     <p>{errors.password}</p>
 
                     <button className={styles.button} type='submit'>
